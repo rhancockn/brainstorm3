@@ -219,6 +219,8 @@ switch (FileFormat)
         end
     case 'NIRS-SNIRF'
         [DataMat, ChannelMat] = in_data_snirf(DataFile);
+    case 'NIRS-XDF'
+        [DataMat, ChannelMat] = in_data_nirs_xdf(DataFile);
     case 'EYE-TOBII-TSV'
         [DataMat, ChannelMat] = in_data_tobii_tsv(DataFile, ImportOptions.DisplayMessages, []);
     otherwise
