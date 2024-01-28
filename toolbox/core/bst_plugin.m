@@ -551,14 +551,14 @@ function PlugDesc = GetSupported(SelPlug)
     PlugDesc(end).CompiledStatus = 0;
 
     % === NIRSTORM ===
-    PlugDesc(end+1)              = GetStruct('nirstorm');
+    PlugDesc(end+1)              = GetStruct('nirstorm-bwcustom');
     PlugDesc(end).Version        = 'github-master';
     PlugDesc(end).Category       = 'fNIRS';
     PlugDesc(end).AutoUpdate     = 0;
     PlugDesc(end).AutoLoad       = 1;
     PlugDesc(end).CompiledStatus = 2;
-    PlugDesc(end).URLzip         = 'https://github.com/Nirstorm/nirstorm/archive/master.zip';
-    PlugDesc(end).URLinfo        = 'https://github.com/Nirstorm/nirstorm';
+    PlugDesc(end).URLzip         = 'https://github.com/rhancockn/nirstorm/archive/master.zip';
+    PlugDesc(end).URLinfo        = 'https://github.com/rhancockn/nirstorm';
     PlugDesc(end).LoadFolders    = {'bst_plugin/core','bst_plugin/forward','bst_plugin/GLM', 'bst_plugin/inverse' , 'bst_plugin/io','bst_plugin/math' ,'bst_plugin/mbll' ,'bst_plugin/misc', 'bst_plugin/OM', 'bst_plugin/preprocessing', 'bst_plugin/ppl'};
     PlugDesc(end).TestFile       = 'process_nst_mbll.m';
     PlugDesc(end).ReadmeFile     = 'README.md';
